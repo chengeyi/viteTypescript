@@ -7,7 +7,7 @@
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-    <router-link to="/about">about</router-link>
+    <router-link to="/about">abouts</router-link>
     <router-view></router-view>
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
