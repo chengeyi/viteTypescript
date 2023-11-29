@@ -12,6 +12,8 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.js"
 
 const app = createApp(App)
 app.use(router)

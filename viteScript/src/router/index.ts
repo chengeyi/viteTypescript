@@ -21,11 +21,20 @@ const routes: Array<RouteRecordRaw> = [
             import(/* webpackChunkName: "About" */ '@/pages/About.vue')
     },
     {
+        path: '/signIn',
+        name: 'SignIn',
+        component: () => import('@/pages/SignIn.vue'),
+        meta: {
+            title: '登入註冊頁面',
+            requiresAuth: false
+        }
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
-        component: () => import('@/pages/noPage.vue'),
+        component: () => import('@/pages/NoPage.vue'),
         meta: {
-            title: '',
+            title: '404頁面',
             requiresAuth: false
         }
     },
