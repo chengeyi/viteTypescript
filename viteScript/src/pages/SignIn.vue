@@ -1,6 +1,6 @@
 <template>
     <div id="sigIn">
-        <h1>登入及註冊頁</h1>
+        <h1>登入及註冊頁s</h1>
     </div>
 </template>
   
