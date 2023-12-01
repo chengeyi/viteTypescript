@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
-    <el-button type="primary">Primary</el-button>
+  <div id="app2">
+    <!-- <el-button type="primary">Primary</el-button>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-    <router-link to="/about">abouts</router-link>
-    <h1>Example heading <span class="badge bg-secondary">New{{ ele }} {{ a }} {{ arr3 }}</span></h1>
-    <button type="button" class="btn btn-dark" @click="goSignIn()">登入</button>
+    </a> -->
+    <!-- <router-link to="/about">abouts</router-link> -->
+    <!-- <h1>Example heading <span class="badge bg-secondary">New{{ ele }} {{ a }} {{ arr3 }}</span></h1> -->
+    <!-- <button type="button" class="btn btn-dark" @click="goSignIn()">登入</button> -->
     <router-view></router-view>
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
@@ -84,7 +84,11 @@ counter.value += 1;
 </script>
 
 <style lang="scss" scoped>
-#app {
+#app2 {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+
   .logo {
     height: 6em;
     padding: 1.5em;

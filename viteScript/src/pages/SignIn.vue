@@ -1,5 +1,5 @@
 <template>
-    <div id="noPage">
+    <div id="sigIn">
         <h1>登入及註冊頁</h1>
     </div>
 </template>
@@ -9,4 +9,11 @@
 
 </script>
   
-<style scoped></style>
+<style scoped>
+#sigIn {
+    box-sizing: border-box;
+    outline: 1px solid red;
+    /* width: 100%;
+    height: 100vh; */
+}
+</style>
