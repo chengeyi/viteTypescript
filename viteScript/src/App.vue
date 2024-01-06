@@ -1,5 +1,6 @@
 <template>
   <div id="app2">
+    <NavBar/>
     <!-- <el-button type="primary">Primary</el-button>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -20,6 +21,7 @@
 import { ref, Ref } from 'vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import About from '@/pages/About.vue'
+import NavBar from './components/NavBar.vue'
 
 import { useIndex } from '@/store/index'
 import { storeToRefs } from 'pinia';
@@ -87,7 +89,6 @@ counter.value += 1;
 #app2 {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
 
   .logo {
     height: 6em;
