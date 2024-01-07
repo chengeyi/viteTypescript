@@ -1,6 +1,6 @@
 <template>
   <div id="app2">
-    <NavBar/>
+    <NavBar />
     <!-- <el-button type="primary">Primary</el-button>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, Ref } from 'vue';
+import { ref, Ref, onMounted } from 'vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import About from '@/pages/About.vue'
 import NavBar from './components/NavBar.vue'
@@ -47,6 +47,12 @@ const arr3 = ref<Person[]>([
 ]);
 
 const bool = ref<boolean>(true);
+
+const obj = ref<object>({
+  name:'ton',
+  age: 10
+})
+console.log(obj.value)
 
 
 
@@ -83,6 +89,30 @@ console.log(name.value)
 console.log(counter.value)
 counter.value += 1;
 
+
+
+onMounted(() => {
+  class Person {
+    //實例屬性
+    name: string = '孫悟空';
+
+    //類屬性加static可直接拿
+    static age: number = 18;
+
+    sayHello() {
+      console.log('大家好')
+    };
+
+    static sayHello() {
+      console.log('大家好2')
+    };
+  }
+  const per = new Person();
+
+  console.log(per.name);
+  console.log(Person.age)
+  Person.sayHello();
+})
 </script>
 
 <style lang="scss" scoped>
