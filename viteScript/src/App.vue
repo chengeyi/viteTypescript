@@ -92,6 +92,7 @@ counter.value += 1;
 
 
 onMounted(() => {
+  let aa:string = '哈哈哈哈開發'
   class Person {
     //實例屬性
     name: string = '孫悟空';
