@@ -95,6 +95,7 @@ onMounted(() => {
   let bb:string = '調整';
   let aa:string = '哈哈哈哈開發';
   let cc:string = '開發2';
+  let dd:string = '開發3';
   class Person {
     //實例屬性
     name: string = '孫悟空';
