@@ -93,6 +93,7 @@ counter.value += 1;
 
 onMounted(() => {
   let bb:string = '調整';
+  let ee:string = '調整2';
   class Person {
     //實例屬性
     name: string = '孫悟空';
