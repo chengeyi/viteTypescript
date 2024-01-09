@@ -112,6 +112,19 @@ onMounted(() => {
   console.log(per.name);
   console.log(Person.age)
   Person.sayHello();
+
+  let a:number;
+  a = 10;
+  // a = '1'
+  console.log(a)
+
+  let c:boolean = true;
+  console.log(c)
+
+  function sum(a:number, b:number):number {
+    return a + b;
+  }
+  console.log(sum(1,2))
 })
 </script>
 
