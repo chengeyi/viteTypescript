@@ -130,6 +130,32 @@ onMounted(() => {
     return a + b;
   }
   console.log(sum(1,2))
+
+  class Dog{
+    name:string;
+    age:number;
+
+    //被稱為構造函數
+    //構造函數會在對象創建時調用
+    constructor(name: string, age: number) {
+      //在實例方法中 this就表示當前的實例
+      console.log(this)
+      this.name = name;
+      this.age = age;
+    }
+
+    bark() {
+      //在方法中可以通過this來表示當前方法的對象
+      console.log(this)
+    }
+  }
+  const dog = new Dog('1', 3);
+  console.log(dog)
+  const dog2 = new Dog('2', 4);
+  console.log(dog2)
+  const dog3 = new Dog('3', 5);
+  console.log(dog3)
+  dog3.bark();
 })
 </script>
 
