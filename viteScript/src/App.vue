@@ -207,6 +207,7 @@ onMounted(() => {
   let asc;
   console.log(asc)
   let asc2;
+  console.log(asc2)
 })
 </script>
 
