@@ -206,6 +206,7 @@ onMounted(() => {
   dogg.run();
   let asc;
   console.log(asc)
+  let asc2;
 })
 </script>
 
