@@ -159,17 +159,17 @@ onMounted(() => {
 
   const arr = [5, 9, 1, 3, 2, 6];
   arr.sort(function (a, b) {
-    console.log(a,b)
+    console.log(a, b)
     return a - b; // a - b > 0
   });
 
 
   //繼承寫法
-  class Animal{
+  class Animal {
     name: string;
     age: number;
 
-    constructor(name:string, age: number) {
+    constructor(name: string, age: number) {
       this.name = name;
       this.age = age;
     }
@@ -205,6 +205,7 @@ onMounted(() => {
   dogg.sayHello();
   dogg.run();
   let asc;
+  console.log('改遠端XXX分支')
   console.log(asc)
   let asc2;
   console.log(asc2)
